@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fandback</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+  <div class="grid">
+    <div class="grid__row">
+      <div class="grid__logo logo">
+          <div class="logo__image"></div>
+          <input type="checkbox" id="slider__checker" autocomplete="off">
+          <label for="slider__checker" class="logo__slider-switcher"></label>
+      </div>
+      <div class="grid__header header">
+          <div class="header__nav-left">
+              <div class="nav-left__item nav-left__item_first"></div>
+              <div class="nav-left__item nav-left__item_second"></div>
+              <div class="nav-left__item nav-left__item_third"></div>
+          </div>
+          <div class="header__nav-right">
+              <input type="checkbox" id="search__checker" autocomplete="off"/>
+              <input type="text" class="nav-right__search-text" />
+              <label for="search__checker" class="nav-right__search-icon"></label>
+              <div class="nav-right__account-image"></div>
+              <div class="nav_right__account-name">Pavel</div>
+              <div class="nav-right__properties"></div>
+          </div>
+      </div>
+    </div>
+    <div class="grid__row">
+        <div class="grid__slider slider" id="slider">
+            <section class="slider__account">
+                <div class="slider__account-image"></div>
+                <div class="slider__account-info">
+                    <h2>Pavel Ermakov</h2>
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="slider__account-icons"></div>
+            </section>
+            <section class="slider__accordion">
+                <div class="slider__accordion-item">
+                    GENERAL
+                </div>
+                <div>
+                    <input id="accordion_1" name="accordion_1" type="checkbox" />
+                    <label for="accordion_1" class="slider__accordion-item">
+                        <div class="slider__accordion-image slider__accordion-image_dashboard"></div>
+                        Dashboard
+                    </label>
+                    <article class="accordion_small">
+                        <p>Текст статьи... </p>
+                    </article>
+                </div>
+                <div>
+                    <input id="accordion_2" name="accordion_2" type="checkbox" />
+                    <label for="accordion_2" class="slider__accordion-item">
+                        <div class="slider__accordion-image slider__accordion-image_layouts"></div>
+                        Layouts
+                    </label>
+                    <article class="accordion_medium">
+                        <p>Текст статьи... </p>
+                    </article>
+                </div>
+                <div>
+                    <input id="accordion_3" name="accordion_3" type="checkbox" />
+                    <label for="accordion_3" class="slider__accordion-item">
+                        <div class="slider__accordion-image slider__accordion-image_pages"></div>
+                        Pages
+                    </label>
+                    <article class="accordion_medium">
+                        <p>Текст статьи... </p>
+                    </article>
+                </div>
+                <div class="slider__accordion-item">
+                    ELEMENTS
+                </div>
+                <div class="slider__accordion-item">
+                    <div class="slider__accordion-image slider__accordion-image_invoice"></div>
+                    Invoice
+                </div>
+                <div class="slider__accordion-item">
+                    <div class="slider__accordion-image slider__accordion-image_charts"></div>
+                    Charts
+                </div>
+                <div class="slider__accordion-item">
+                    <div class="slider__accordion-image slider__accordion-image_snippets"></div>
+                    Snippets
+                </div>
+                <div class="slider__accordion-item">
+                    <div class="slider__accordion-image slider__accordion-image_ui-widgets"></div>
+                    UI Widgets
+                </div>
+                <div class="slider__accordion-item">
+                    <div class="slider__accordion-image slider__accordion-image_forms"></div>
+                    Forms
+                </div>
+                <div class="slider__accordion-item">
+                    <div class="slider__accordion-image slider__accordion-image_componnets"></div>
+                    Componnets
+                </div>
+                <div class="slider__accordion-item">
+                    <div class="slider__accordion-image slider__accordion-image_plugin"></div>
+                    Plugin
+                </div>
+                <div class="slider__accordion-item">
+                    <div class="slider__accordion-image slider__accordion-image_email"></div>
+                    Email
+                </div>
+            </section>
+        </div>
+        <div class="grid__main-content" id="main-content">
+            <div class="grid__row">
+                <div class="main-content__header">
+                    <div class="main-content__header-breadcumbs">
+                        <b>Dasboard</b> / Home / All Site View
+                    </div>
+                    <div class="main-content__header-period">
+                        <span>Reporting Period</span>
+                        <select>
+                            <option>Last 30 Day's</option>
+                            <option>Last 7 Day's</option>
+                            <option>Last Day</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__row">
+                <div class="grid__item main-content__statistic main-content__statistic-1">
+                    <div class="main-content__statistic_top main-content__statistic-1_top">
+                    </div>
+                    <div class="main-content__statistic_center main-content__statistic-1_center">
+                        <span>Visitors</span>
+                    </div>
+                    <div class="main-content__statistic_bottom main-content__statistic-1_bottom">
+                        <span class="main-content__statistic-1_arrow">↑</span>
+                        <span class="main-content__statistic-value">125 K</span>
+                        <span class="main-content__statistic-1_increment">(+0.50%)</span>
+                    </div>
+                </div>
+                <div class="grid__item main-content__statistic main-content__statistic-2">
+                    <div class="main-content__statistic_top main-content__statistic-2_top">
+                    </div>
+                    <div class="main-content__statistic_center main-content__statistic-2_center">
+                        <span>New Order</span>
+                    </div>
+                    <div class="main-content__statistic_bottom main-content__statistic-2_bottom">
+                        <span class="main-content__statistic-value">28 K</span>
+                    </div>
+                </div>
+                <div class="grid__item main-content__statistic main-content__statistic-3">
+                    <div class="main-content__statistic_top main-content__statistic-3_top">
+                    </div>
+                    <div class="main-content__statistic_center main-content__statistic-3_center">
+                        <span>Sales</span>
+                    </div>
+                    <div class="main-content__statistic_bottom main-content__statistic-3_bottom">
+                        <span class="main-content__statistic-value">25 K</span>
+                    </div>
+                </div>
+                <div class="grid__item main-content__statistic main-content__statistic-4">
+                    <div class="main-content__statistic_top main-content__statistic-4_top">
+                    </div>
+                    <div class="main-content__statistic_center main-content__statistic-4_center">
+                        <span>Shipping</span>
+                    </div>
+                    <div class="main-content__statistic_bottom main-content__statistic-4_bottom">
+                        <span class="main-content__statistic-value">12 K</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__row">
+                <div class="grid__item main-content__graph" id="main-content__graph">
+                    <div class="item__header">
+                        <span>EARNING GRAPH OVERVIEW</span>
+                        <div class="main-content__control-buttons">
+                            <div class="control-button control-button__update graph-content__update"></div>
+                            <input type="checkbox" id="graph-vis__checker" class="content__checker" autocomplete="off">
+                            <label for="graph-vis__checker" class="control-button control-button__roll graph-content__roll"></label>
+                            <input type="checkbox" id="graph-close__checker" class="content__checker" autocomplete="off">
+                            <label for="graph-close__checker" class="control-button control-button__close graph-content__close" id="graph-content__close"></label>
+                        </div>
+                    </div>
+                    <div class="item__graph-content" id="item__graph-content">
+                        <div class="graph-content__indicators">
+                            <span>20 000</span>
+                            <span>15 000</span>
+                            <span>10 000</span>
+                            <span>5 000</span>
+                        </div>
+                        <div class="graph__content">
+                            <div class="graph__content-main" id="graph__content-main">
+                                <div class="grid__graph-row">
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                </div>
+                                <div class="grid__graph-row">
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                </div>
+                                <div class="grid__graph-row">
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                </div>
+                                <div class="grid__graph-row">
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                    <div class="grid__graph-item"></div>
+                                </div>
+                            </div>
+                            <div class="graph__counters">
+                                <input type="checkbox" id="graph-revenue_checker" class="graph-background__checker" autocomplete="off">
+                                <label for="graph-revenue_checker" class="graph__counter graph__counter_1">
+                                    <span>$13,234</span>
+                                    <p>Revenue</p>
+                                </label>
+                                <input type="checkbox" id="graph-order_checker" class="graph-background__checker" autocomplete="off">
+                                <label for="graph-order_checker" class="graph__counter graph__counter_2">
+                                    <span>235 090</span>
+                                    <p>Order</p>
+                                </label>
+                                <input type="checkbox" id="graph-tax_checker" class="graph-background__checker" autocomplete="off">
+                                <label for="graph-tax_checker" class="graph__counter graph__counter_3">
+                                    <span>$134,900</span>
+                                    <p>Tax</p>
+                                </label>
+                                <input type="checkbox" id="graph-shipment_checker" class="graph-background__checker" autocomplete="off">
+                                <label for="graph-shipment_checker" class="graph__counter graph__counter_4">
+                                    <span>$1,134</span>
+                                    <p>Shipment</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__row">
+                <div class="grid__item main-content__map" id="main-content__map">
+                    <div class="item__header">
+                        <span>TOP SEARCH</span>
+                        <div class="main-content__control-buttons">
+                            <div class="control-button control-button__update map-content__update"></div>
+                            <input type="checkbox" id="map-vis__checker" class="content__checker" autocomplete="off">
+                            <label for="map-vis__checker" class="control-button control-button__roll map-content__roll"></label>
+                            <input type="checkbox" id="map-close__checker" class="content__checker" autocomplete="off">
+                            <label for="map-close__checker" class="control-button control-button__close map-content__close"></label>
+                        </div>
+                    </div>
+                    <div class="item__map-content" id="item__map-content">
+                        <div class="map__content">
+                            <div class="map__image"></div>
+                            <div class="map__countries">
+                                <div class="map__country">
+                                    <div class="country__image_1"></div>
+                                    <div class="country__statistic country__statistic_1">
+                                        <p>America</p>
+                                        <span>46%</span>
+                                    </div>
+                                </div>
+                                <div class="map__country">
+                                    <div class="country__image_2"></div>
+                                    <div class="country__statistic country__statistic_2">
+                                        <p>U.Kingdom</p>
+                                        <span>24%</span>
+                                    </div>
+                                </div>
+                                <div class="map__country">
+                                    <div class="country__image_3"></div>
+                                    <div class="country__statistic country__statistic_3">
+                                        <p>Bangladesh</p>
+                                        <span>18%</span>
+                                    </div>
+                                </div>
+                                <div class="map__country">
+                                    <div class="country__image_4"></div>
+                                    <div class="country__statistic country__statistic_4">
+                                        <p>Canada</p>
+                                        <span>12%</span>
+                                    </div>
+                                </div>
+                                <div class="map__country">
+                                    <div class="country__image_5"></div>
+                                    <div class="country__statistic country__statistic_5">
+                                        <p>Russia</p>
+                                        <span>10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item main-content__traffic" id="main-content__traffic">
+                    <div class="item__header">
+                        <span>TRAFFIC SOURCES</span>
+                        <div class="main-content__control-buttons">
+                            <div class="control-button control-button__update traffic-content__update"></div>
+                            <input type="checkbox" id="traffic-vis__checker" class="content__checker" autocomplete="off">
+                            <label for="traffic-vis__checker" class="control-button control-button__roll traffic-content__roll"></label>
+                            <input type="checkbox" id="traffic-close__checker" class="content__checker" autocomplete="off">
+                            <label for="traffic-close__checker" class="control-button control-button__close traffic-content__close"></label>
+                        </div>
+                    </div>
+                    <div class="item__traffic-content" id="item__traffic-content">
+                        <div class="traffic__content">
+                            <div class="traffic__item traffic__direct">
+                                <div class="traffic__name traffic__direct-name">Direct</div>
+                                <div class="traffic__value traffic__direct-value">1200</div>
+                                <div class="traffic__graph traffic__direct-graph"></div>
+                            </div>
+                            <div class="traffic__item traffic__refer">
+                                <div class="traffic__name traffic__refer-name">Refer</div>
+                                <div class="traffic__value traffic__refer-value">1150</div>
+                                <div class="traffic__graph traffic__refer-graph"></div>
+                            </div>
+                            <div class="traffic__item traffic__social">
+                                <div class="traffic__name traffic__social-name">Social</div>
+                                <div class="traffic__value traffic__social-value">980</div>
+                                <div class="traffic__graph traffic__social-graph"></div>
+                            </div>
+                            <div class="traffic__item traffic__search">
+                                <div class="traffic__name traffic__search-name">Search</div>
+                                <div class="traffic__value traffic__search-value">720</div>
+                                <div class="traffic__graph traffic__search-graph"></div>
+                            </div>
+                            <div class="traffic__item traffic__internal">
+                                <div class="traffic__name traffic__internal-name">Internal</div>
+                                <div class="traffic__value traffic__internal-value">600</div>
+                                <div class="traffic__graph traffic__internal-graph"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__row">
+                <div class="grid__item main-content__order" id="main-content__order">
+                    <div class="item__header">
+                        <span>RECENT ORDER</span>
+                        <div class="main-content__control-buttons">
+                            <div class="control-button control-button__update order-content__update"></div>
+                            <input type="checkbox" id="order-vis__checker" class="content__checker" autocomplete="off">
+                            <label for="order-vis__checker" class="control-button control-button__roll order-content__roll"></label>
+                            <input type="checkbox" id="order-close__checker" class="content__checker" autocomplete="off">
+                            <label for="order-close__checker" class="control-button control-button__close order-content__close"></label>
+                        </div>
+                    </div>
+                    <div class="item__order-content" id="item__order-content">
+                        <div class="order__content">
+                            <table border="1" class="order__table">
+                                <tr>
+                                    <th>IMAGE</th>
+                                    <th>PRODUCT NAME</th>
+                                    <th>PRODUCT CODE</th>
+                                    <th>STATUS</th>
+                                    <th>PURCHASED ON</th>
+                                    <th>PRICE</th>
+                                    <th>QUANTITY</th>
+                                    <th>TRACHING NO#</th>
+                                </tr>
+                                <tr>
+                                    <td class="order__table-image order__table-image_1"></td>
+                                    <td>Leisure Suit Casual</td>
+                                    <td>3BSD59</td>
+                                    <td class="order__status">
+                                        <span class="order__status_paid">
+                                            Paid
+                                        </span>
+                                    </td>
+                                    <td>27 Sep 2016</td>
+                                    <td>$99.00</td>
+                                    <td>2</td>
+                                    <td>#BG6R9853LP</td>
+                                </tr>
+                                <tr>
+                                    <td class="order__table-image order__table-image_2"></td>
+                                    <td>Cotton Fleece Casual</td>
+                                    <td>3BH87G</td>
+                                    <td class="order__status">
+                                        <span class="order__status_pending">
+                                            Pending
+                                        </span>
+                                    </td>
+                                    <td>08 Sep 2016</td>
+                                    <td>$99.00</td>
+                                    <td>2</td>
+                                    <td>#368QRM83B</td>
+                                </tr>
+                                <tr>
+                                    <td class="order__table-image order__table-image_3"></td>
+                                    <td>Formal Slim Fit Casual</td>
+                                    <td>4D3GHT</td>
+                                    <td class="order__status">
+                                        <span class="order__status_paid">
+                                            Paid
+                                        </span>
+                                    </td>
+                                    <td>25 Aug 2016</td>
+                                    <td>$99.00</td>
+                                    <td>2</td>
+                                    <td>#AXZ6F58T3V</td>
+                                </tr>
+                                <tr>
+                                    <td class="order__table-image order__table-image_4"></td>
+                                    <td>Velvet Patchwork Casual</td>
+                                    <td>5D4H3G</td>
+                                    <td class="order__status">
+                                        <span class="order__status_failed">
+                                            Failed
+                                        </span>
+                                    </td>
+                                    <td>27 Sep 2016</td>
+                                    <td>$99.00</td>
+                                    <td>2</td>
+                                    <td>#SD89HK561</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__row">
+                <div class="grid__item main-content__visits" id="main-content__visits">
+                    <div class="item__header">
+                        <span>SITE VISITS</span>
+                        <div class="main-content__control-buttons">
+                            <div class="control-button control-button__update visits-content__update"></div>
+                            <input type="checkbox" id="visits-vis__checker" class="content__checker" autocomplete="off">
+                            <label for="visits-vis__checker" class="control-button control-button__roll visits-content__roll"></label>
+                            <input type="checkbox" id="visits-close__checker" class="content__checker" autocomplete="off">
+                            <label for="visits-close__checker" class="control-button control-button__close visits-content__close"></label>
+                        </div>
+                    </div>
+                    <div class="item__visits-content" id="item__visits-content">
+                        <div class="visits__header">
+                            <div class="visits__header-item visits__header-item_new">
+                                <div></div>
+                                <p>New Visitors</p>
+                            </div>
+                            <div class="visits__header-item visits__header-item_old">
+                                <div></div>
+                                <p>Old Visitors</p>
+                            </div>
+                        </div>
+                        <div class="visits__content">
+                            <div class="grid__visits">
+                                <div class="grid__visits-row">
+                                    <div class="grid__visits-item"></div>
+                                    <div class="grid__visits-item"></div>
+                                    <div class="grid__visits-item"></div>
+                                    <div class="grid__visits-item"></div>
+                                    <div class="grid__visits-item"></div>
+                                    <div class="grid__visits-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visits__counters">
+                            <div class="visits__counter visits__counter_new">
+                                <div class="visits__counter-image visits__counter-image_new"></div>
+                                <div class="visits__counter-description visits__counter-description_new">
+                                    <p>New Visitors</p>
+                                    <span>12 202</span>
+                                </div>
+                            </div>
+                            <div class="visits__counter visits__counter_old">
+                                <div class="visits__counter-image visits__counter-image_old"></div>
+                                <div class="visits__counter-description visits__counter-description_old">
+                                    <p>Old Visitors</p>
+                                    <span>25 051</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item main-content__marketing" id="main-content__marketing">
+                    <div class="item__header">
+                        <span>MARKETING CAMPAIGN</span>
+                        <div class="main-content__control-buttons">
+                            <div class="control-button control-button__update marketing-content__update"></div>
+                            <input type="checkbox" id="marketing-vis__checker" class="content__checker" autocomplete="off">
+                            <label for="marketing-vis__checker" class="control-button control-button__roll marketing-content__roll"></label>
+                            <input type="checkbox" id="marketing-close__checker" class="content__checker" autocomplete="off">
+                            <label for="marketing-close__checker" class="control-button control-button__close marketing-content__close"></label>
+                        </div>
+                    </div>
+                    <div class="item__marketing-content" id="item__marketing-content">
+                        <div class="marketing__content">
+                            <div class="marketing__content-diagram">
+                                <div class="content-diagram__research">
+                                    <div class="content-diagram__research_slice">
+                                    </div>
+                                </div>
+                                <div class="content-diagram__information">
+                                    <div class="content-diagram__information_slice">
+                                    </div>
+                                </div>
+                                <div class="content-diagram__product-design">
+                                    <div class="content-diagram__product-design_slice">
+                                    </div>
+                                </div>
+                                <div class="content-diagram__pacaging">
+                                    <div class="content-diagram__pacaging_slice">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content-diagram__center"><span>MC</span></div>
+                                </div>
+                            </div>
+                            <div class="content-diagram__info">
+                                <div class="content-diagram__info_research">
+                                    <span>Research</span>
+                                    <p>42%</p>
+                                </div>
+                                <div class="content-diagram__info_information">
+                                    <span>Information</span>
+                                    <p>30%</p>
+                                </div>
+                                <div class="content-diagram__info_product-design">
+                                    <span>Product Design</span>
+                                    <p>30%</p>
+                                </div>
+                                <div class="content-diagram__info_pacaging">
+                                    <span>Pacaging</span>
+                                    <p>8%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
